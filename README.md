@@ -3,6 +3,13 @@ Application that enables minimizing in the i3 window manager
 
 I really missed the possibility for i3 to minimize windows therefore I made this simple GTK3 application that enables/simulates minimizing by using the scratchpad.
 
+# Example images
+i3Minimize with Firefox minimzed and two terminals open:
+![alt tag](https://github.com/danielbrouwer08/i3Minimize/raw/master/images/i3minimize_example1.png)
+
+i3Minimize with both Firefox and one of the terminals minimized
+![alt tag](https://github.com/danielbrouwer08/i3Minimize/raw/master/images/i3minimize_example2.png)
+
 # Dependencies
 Make sure you have installed the following packages before installing i3Minimize:
 	
