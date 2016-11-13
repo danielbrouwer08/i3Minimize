@@ -5,6 +5,7 @@ I really missed the possibility for i3 to minimize windows therefore I made this
 
 # Dependencies
 Make sure you have installed the following packages before installing i3Minimize:
+	
 	tmux (used for sending commands to the i3Minimize application)
 	xdotool (used for getting the XID of the application to be minimized)
 	i3 (obviously)
