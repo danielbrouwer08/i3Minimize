@@ -12,11 +12,19 @@ Make sure you have installed the following packages before installing i3Minimize
 	gtk3
 
 # Installation
+First clone this repository using the following command:
+
+	git clone git@github.com:danielbrouwer08/i3Minimize.git
+
+Enter the directory that has been created:
+	
+	cd./i3Minimize
+
 To compile and install just run the install script.
 
 	./install (from the root directory)
 
-Be sure that the script is enabled for execution with the following command:
+If it does not work, be sure that the script is enabled for execution with the following command:
 
 	sudo chmod 755 ./install (from the root directoy)
 
