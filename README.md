@@ -44,6 +44,11 @@ with:
 
 To disable the default scratchpad behaviour and enable the new minimize beheviour. Of course it is also possible to use another shortcut key combination.
 
+# Launching i3Minimize
+i3Minimize can be launched using the following command:
+
+	i3m
+
 # Removal
 The application can be removed using the remove script.
 
