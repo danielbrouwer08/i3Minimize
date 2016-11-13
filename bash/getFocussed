@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# Depends on: xdotool
+# gets the id of the focussed window
+
+#echo $(xdotool getactivewindow)
+
+#name of process:
+echo "$(ps -p $(xdotool getactivewindow getwindowpid) -o comm | tail -1):$(xdotool getactivewindow)"
+

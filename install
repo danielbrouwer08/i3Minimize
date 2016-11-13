@@ -1,0 +1,38 @@
+#i3minimize installation script
+#!/bin/bash
+
+cd ./source #open source folder
+
+make clean #remove the old compilation files
+make #compile the application
+
+sudo mkdir /usr/local/i3minimize #make a directory to put the binaries in
+
+cd ..
+
+sudo cp -r ./bin /usr/local/i3minimize/bin
+sudo cp -r ./bash /usr/local/i3minimize/bash
+sudo cp -r ./source/style.css /usr/local/i3minimize/bin
+
+cd /usr/bin
+
+sudo ln -s "/usr/local/i3minimize/bash/i3m" #make a symlink to i3m
+sudo ln -s "/usr/local/i3minimize/bash/getFocussed" #make symlink to getFocussed
+sudo ln -s "/usr/local/i3minimize/bash/sendInput" #make symlink to sendInput
+
+
+printf "
+------------------------------------------------------------------\n
+Installation is done.\n
+Edit the ~/.i3/config file and add the following line:\n
+\texec --no-startup-id i3m\n
+To autostart the i3Minimize bar\n
+\n
+Replace the following line:\n
+\tbindsym \$mod+Shift+minus move scratchpad\n
+With:\n
+\tbindsym \$mod+Shift+minus exec sendInput \$(getFocussed)\n
+This disables the default scratchpad behaviour with the new minimize behaviour. Of course it is also possible to use another shortcut keycombination.\n
+------------------------------------------------------------------\n
+"
+

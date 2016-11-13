@@ -1,0 +1,53 @@
+window{
+  background-color: black;
+  padding: 0px 0px 0px 0px;
+  margin: 0px 0px 0px 0px;
+}
+
+button{
+  padding: 0px 0px 0px 0px;
+  margin: 0px 0px 0px 0px;
+  font-size: 10px;
+  border-color: black;
+  /*border-style: none;*/
+}
+
+button label{
+  padding: 0px 0px 0px 0px;
+  margin: 0px 0px 0px 0px;
+  background-color: rgb(34,34,34);
+  color: rgb(134,134,134);
+ /* border-style: none;*/
+  border-color: rgb(134,134,134);
+}
+
+
+buttonbox{
+  padding: 0px 0px 0px 0px;
+  margin: 0px 0px 0px 0px;
+}
+
+/*
+GtkButtonBox{
+	background-color: red;
+	color: red;
+}
+
+*{
+	background-color: green;
+	color: red;
+}
+
+
+GtkButton {
+  border-image: none;
+  background-image: none;
+  background-color: green;
+  color: red;
+}
+
+GtkLabel {
+    color: green;
+}
+
+*/

@@ -1,0 +1,6 @@
+#!/bin/bash
+
+tmux send-keys -t i3Minimize -l "$1"
+tmux send-keys -t i3Minimize C-m
+
+

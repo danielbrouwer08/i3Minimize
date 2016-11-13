@@ -1,0 +1,10 @@
+#!/bin/bash
+
+#active=$(./getFocussed)
+#echo $active
+id=$1;
+#id=${id##*:};
+
+#notify-send 'Moving window id: '$id' to scratchpad'
+
+i3-msg '[ id="'$id'" ] move scratchpad'

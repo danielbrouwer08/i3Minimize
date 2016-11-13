@@ -1,0 +1,33 @@
+#!/bin/bash
+#D.N.F. Brouwer
+#11-10-2016
+#tmux wrapper for i3Minimize
+delay=0.25;
+
+send()
+{
+  tmux send-keys -t i3Minimize -l "$1"
+  tmux send-keys -t i3Minimize C-m
+}
+
+tmux kill-session -t i3Minimize #kill the old instance (if it is running)
+
+xterm -e "tmux new -s i3Minimize" & #start terminal in the bg
+
+#wait #wait till xterm is launched
+while true
+do
+	tmp=$(tmux ls | grep -sw i3Minimize); #wait till tmux is launched
+	if [ -n "$tmp" ]; then
+		break;	
+	fi
+done
+
+send "i3-msg 'move scratchpad'" #moving tmux terminal out of sight!
+
+send "cd /usr/local/i3minimize/bash"
+
+send "../bin/i3Minimize"
+
+sleep $delay
+

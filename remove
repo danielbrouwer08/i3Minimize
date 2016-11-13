@@ -1,0 +1,10 @@
+#i3mimimize removal script
+#!/bin/bash
+
+sudo rm -rf /usr/local/i3minimize #remove all binaries
+
+sudo rm -rf "/usr/bin/i3m" #removfe symlink to i3m
+sudo rm -rf "/usr/bin/getFocussed" #remove symlink to getFocussed
+sudo rm -rf "/usr/bin/sendInput" #remove symlink to sendInput
+
+printf "Done.\n"
