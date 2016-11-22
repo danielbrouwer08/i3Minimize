@@ -25,7 +25,7 @@ First clone this repository using the following command:
 
 Enter the directory that has been created:
 	
-	cd./i3Minimize
+	cd ./i3Minimize
 
 To compile and install just run the install script.
 
