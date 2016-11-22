@@ -57,7 +57,7 @@ i3Minimize can be launched using the following command:
 	i3m
 
 # Usage
-An active window can be minimized by using the shorcut defined in the i3 config file. If you followed the installation steps the shortcut should be $mod+Shift+minus. The name and XID of the window will now appear in the i3Minimize bar. To retrieve the window just click on the corresponding button.
+An active window can be minimized by using the shorcut defined in the i3 config file. If you have followed the installation steps the shortcut should be $mod+Shift+minus. The name and XID of the window will now appear in the i3Minimize bar. To retrieve the window just click on the corresponding button.
 
 # Removal
 The application can be removed using the remove script.
