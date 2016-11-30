@@ -17,6 +17,7 @@ Make sure you have installed the following packages before installing i3Minimize
 	xdotool (used for getting the XID of the application to be minimized)
 	i3 (obviously)
 	gtk3
+	xterm (should not be neccesairy necessary in the future)
 
 # Installation
 First clone this repository using the following command:
@@ -62,6 +63,7 @@ An active window can be minimized by using the shorcut defined in the i3 config 
 # Future plans
 * Keyboard shortcuts to maximize a specific window after it has been minimized.
 * Renaming of the labels.
+* Remove xterm dependency by using the default installed terminal.
 
 # Removal
 The application can be removed using the remove script.
