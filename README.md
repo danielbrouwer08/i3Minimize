@@ -47,7 +47,7 @@ Furthermore replace this line:
 
 with:
 	
-	$mod+Shift+minus exec sendInput \$(getFocussed)
+	$mod+Shift+minus exec sendInput $(getFocussed)
 
 To disable the default scratchpad behaviour and enable the new minimize beheviour. Of course it is also possible to use another shortcut key combination.
 
@@ -58,6 +58,10 @@ i3Minimize can be launched using the following command:
 
 # Usage
 An active window can be minimized by using the shorcut defined in the i3 config file. If you have followed the installation steps the shortcut should be $mod+Shift+minus. The name and XID of the window will now appear in the i3Minimize bar. To retrieve the window just click on the corresponding button.
+
+# Future plans
+* Keyboard shortcuts to maximize a specific window after it has been minimized.
+* Renaming of the labels.
 
 # Removal
 The application can be removed using the remove script.
