@@ -50,7 +50,7 @@ with:
 	
 	$mod+Shift+minus exec sendInput $(getFocussed)
 
-To disable the default scratchpad behaviour and enable the new minimize beheviour. Of course it is also possible to use another shortcut key combination.
+To disable the default scratchpad behaviour and enable the new minimize behaviour. Of course it is also possible to use another shortcut key combination.
 
 # Launching i3Minimize
 i3Minimize can be launched using the following command:
