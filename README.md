@@ -22,7 +22,7 @@ Make sure you have installed the following packages before installing i3Minimize
 # Installation
 First clone this repository using the following command:
 
-	git clone git@github.com:danielbrouwer08/i3Minimize.git
+	git clone https://github.com/danielbrouwer08/i3Minimize.git
 
 Enter the directory that has been created:
 	
