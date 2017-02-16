@@ -6,6 +6,8 @@ cd ./source #open source folder
 make clean #remove the old compilation files
 make #compile the application
 
+sudo rm -rf /usr/local/i3minimize #remove old
+
 sudo mkdir /usr/local/i3minimize #make a directory to put the binaries in
 
 cd ..
@@ -15,6 +17,11 @@ sudo cp -r ./bash /usr/local/i3minimize/bash
 sudo cp -r ./source/style.css /usr/local/i3minimize/bin
 
 cd /usr/bin
+
+#remove any old symlinks just to be sure
+sudo rm -rf "./i3m" 
+sudo rm -rf "./getFocussed"
+sudo rm -rf "./sendInput" 
 
 sudo ln -s "/usr/local/i3minimize/bash/i3m" #make a symlink to i3m
 sudo ln -s "/usr/local/i3minimize/bash/getFocussed" #make symlink to getFocussed

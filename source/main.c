@@ -39,11 +39,22 @@ int indexOfLabel(char* label)
 }
 
 //get the window back from the scratchpad!
-void getScratchpad(void* button)
+void getScratchpad(void* button, GdkEventButton *event)
 {
 	char* lbl = gtk_button_get_label((GtkWidget*)button);
 	char* idx = strchr(lbl,':')+1; //get id only
-	char* tmp = "../bash/getScratchpad ";
+	char* tmp = "../bash/getScratchpad 0 "; //open the window as a tiling window
+
+	if (event->type == GDK_BUTTON_PRESS  &&  event->button == 3) //if right mouse button is pressed
+	{ 
+		tmp = "../bash/getScratchpad 1 "; //open the window as a floating window
+	}
+	/*
+	if (event->type == GDK_BUTTON_PRESS  &&  event->button == 1) //if left mouse button is pressed
+	{
+	
+	}
+	*/
 	
 	char* cmd = malloc(sizeof(char)*(strlen(idx)+strlen(tmp))); //malloc enough to hold the command string :)
 	strcpy(cmd, tmp);
@@ -79,7 +90,7 @@ void addContainer(void* button)
 	gtk_widget_show ((GtkWidget*)button);
 	
 	//callback on click of the button
-	g_signal_connect ((GtkWidget*)button, "clicked", G_CALLBACK (getScratchpad), (GtkWidget*)button);
+	g_signal_connect ((GtkWidget*)button, "button-press-event", G_CALLBACK (getScratchpad), (GtkWidget*)button);
 	
 	g_idle_remove_by_data (addContainer); //removing myself from the mainloop :D (because it will loop indef otherwise adding the samebutton everytime)
 }

@@ -1,9 +1,13 @@
 #!/bin/bash
 #get window with id=$1 from the scratchpad
-id=$1;
+rclick=$1
+id=$2
 #id=${id##*:};
 
 #notify-send 'Getting window id: '$id' from scratchpad'
 
 i3-msg ' [ id="'$id'" ] scratchpad show'
-i3-msg ' [ id="'$id'" ] floating toggle'
+
+if [ $rclick -eq 0 ] #only float toggle if leftclick
+ then i3-msg ' [ id="'$id'" ] floating toggle'
+fi
