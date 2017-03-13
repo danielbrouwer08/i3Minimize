@@ -16,7 +16,7 @@ Make sure you have installed the following packages before installing i3Minimize
 	tmux (used for sending commands to the i3Minimize application)
 	xdotool (used for getting the XID of the application to be minimized)
 	i3 (obviously)
-	gtk3
+	gtk3 dev
 	xterm (should not be necessary in the future)
 
 # Installation
