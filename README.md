@@ -17,6 +17,7 @@ Make sure you have installed the following packages before installing i3Minimize
 	xdotool (used for getting the XID of the application to be minimized)
 	i3 (obviously)
 	gtk3 dev
+	libnotify dev
 	xterm (should not be necessary in the future)
 
 # Installation
