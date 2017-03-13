@@ -44,7 +44,7 @@ To enable auto-starting of i3Minimize
 
 Furthermore replace this line:
 	
-	bindsym \$mod+Shift+minus move scratchpad
+	bindsym $mod+Shift+minus move scratchpad
 
 with:
 	
