@@ -18,7 +18,6 @@ Make sure you have installed the following packages before installing i3Minimize
 	i3 (obviously)
 	gtk3 dev
 	libnotify dev
-	xterm (should not be necessary in the future)
 
 # Installation
 First clone this repository using the following command:
